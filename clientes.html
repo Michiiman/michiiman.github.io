@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGames.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="Img/Mando.png" alt="logo-empresa"></a>
+                <span>
+                    <h1>CGAMES.COM</h1>
+                </span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="clientes.html">Clientes</a>
+                        <a class="nav-link" href="videojuegos.html">Videojuegos</a>
+                        <a class="nav-link" href="compras.html">Compras</a>
+                        <a class="nav-link" href="fidelizacion.html">Puntos</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container ">
+        <h2 class="text-center fw-semibold text-white">Clientes</h2>
+        <form id="form" class="d-flex flex-column">
+            <input id="numId" name="documento" placeholder="Número de identificación">
+            <input id="nombre" name="nombre" type="text" placeholder="Nombre">
+            <input id="apellido" name="apellido" type="text" placeholder="Apellidos">
+            <input id="telefono" name="telefono" type="text" placeholder="Telefono">
+            <input id="correo" name="correo" type="text" placeholder="Correo Electronico">
+            <input id="fecha" name="fecha" type="date">
+            <input id="nacionalidad" name="nacionalidad" type="text" placeholder="Nacionalidad">
+        </form>
+        <div class="row">
+            <div class="col">
+                <button id="btnAdd" type="button" class=" btn-light  m-3 ">Agregar</button>
+            </div>
+            <div class="col  m-3">
+                <input class="w-100" id="buscar" name="Search" placeholder="Search" type="text">
+            </div>
+        </div>
+
+    </section>
+    <!-- Lista de clientes -->
+    <table id="clientes" class=" container bg-light table text-center">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Identificación</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+                <th>Fecha de nacimiento</th>
+                <th>Nacionalidad</th>
+
+            </tr>
+        </thead>
+        <tbody id="tabla-clientes" class="text-center">
+        </tbody>
+    </table>
+    <!-- Scripts -->
+    <script src="Js/modClient.js"></script>
+    <script ></script>
+    <!-- Bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

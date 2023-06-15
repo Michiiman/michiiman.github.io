@@ -1,0 +1,31 @@
+body{
+    background-image: url(https://img.redbull.com/images/q_auto,f_auto/redbullcom/2020/12/10/xeaibwprofk0mib3wkdd/gaming-ghostrunner);
+    
+}
+
+.logo{
+    width: 5vh;
+}
+
+.botones{
+    width: 45%;
+    height: 45%;
+    border: 2px solid;
+    background-image: url(https://st5.depositphotos.com/35210760/62785/i/950/depositphotos_627858544-stock-photo-1980-inspired-cyberpunk-neon-light.jpg);
+}
+
+.caja{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.element{
+    height: 200px;
+    width: 500px;
+}

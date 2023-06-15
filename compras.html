@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGames.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo"src="Img/Mando.png" alt="logo-empresa"></a>
+                <span><h1>CGAMES.COM</h1></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="clientes.html">Clientes</a>
+                        <a class="nav-link" href="videojuegos.html">Videojuegos</a>
+                        <a class="nav-link" href="compras.html">Compras</a>
+                        <a class="nav-link" href="fidelizacion.html">Puntos</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class=" mt-5">
+
+        <h2 class="text-center mb-5 text-white">Gestor de Compras</h2>
+
+        <div class="row justify-content-center ">
+            <div class="col col-md-8" id="formVenta">
+                <!-- SEARCH -->
+                <form action="" class="form-control">
+
+                    <h3 class="text-center mt-2 mb-4">Datos de Compra</h3>
+
+                    <!-- SELECCION DE CLIENTES -->
+                    <div class="container-fluid" id="clientes">
+                        <!-- SEARCH -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Buscar cliente por documento..." id="buscar-clientes">
+                        </div>
+
+                        <!-- TABLE -->
+                        <div class="table-responsive">
+                            <table class="table table-secondary table-striped text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Documento</th>
+                                        <th>Nombres</th>
+                                        <th>Apellidos</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabla-clientes">
+                                    <tr>
+                                        <td>1118528058</td>
+                                        <td>Carlos</td>
+                                        <td>Santana</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="d-grid gap-2 mt-4">
+                            <button class="btn btn-success disabled" type="button" id="select-cliente">Siguiente</button>
+                        </div>
+                    </div>
+
+                    <!--SELECCION JUEGOS -->
+                    <div class="container-fluid d-none" id="juegos">
+                        <!-- SEARCH -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Buscar por nombre juego" id="buscar-juegos">
+                        </div>
+                        <!-- TABLE -->
+                        <div class="table-responsive">
+                            <table class="table table-dark table-striped text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Titulo</th>
+                                        <th>Genero</th>
+                                        <th>Valor </th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabla-juegos">
+                                    <tr>
+                                        <td>22555</td>
+                                        <td>552000</td>
+                                        <td>Fantasia</td>
+                                        <td>50000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="d-grid gap-2 mt-4">
+                            <button class="btn btn-success disabled" type="button" id="comprarJuego">Comprar Juego</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Factura -->
+        <div class=" row justify-content-center ">
+            <div class="col col-md-8" id="form-factura">
+                <div class=" col  row-cols  card" width="70%">
+                    <img class="align-self-center mt-4" src="Img/Mando.png" alt="" width="100px">
+                    <h3 class="text-center">CGame.com</h3>
+                    <h5 class="text-center">Detalle de la compra</h5>
+                    <hr class="me-3 ms-3">
+                    <h5 class="text-center">Datos Cliente</h5>
+                    <div class="card-body" id="datosCliente">
+                        <p><b>Documento:</b> </p>
+                        <p><b>Nombres:</b> </p>
+                        <p><b>Teléfono:</b> </p>
+                        <p><b>Email:</b> </p>
+                        <p><b>Nacionalidad:</b> </p>
+                    </div>
+                        <hr class="me-3 ms-3">
+                        <h5 class="text-center">Gastos adicionales</h5>
+                        <div class="card-body" id="datosJuego">
+                            <p><b>Valor Juego:</b> </p>
+                            <p><b>+IVA:</b> </p>
+                            <p><b>+Impuesto Especial:</b> </p>
+                            <p><b>Total:</b> </p>
+                            <hr>
+                            <p><b>Puntos de Fidelización por compra</b> </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Scripts -->
+    <script src="Js/modCompras.js"></script>
+    <!-- Bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+</body>
+</html>

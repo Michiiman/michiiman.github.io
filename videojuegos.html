@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGames.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo"src="Img/Mando.png" alt="logo-empresa"></a>
+                <span><h1>CGAMES.COM</h1></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="clientes.html">Clientes</a>
+                        <a class="nav-link" href="videojuegos.html">Videojuegos</a>
+                        <a class="nav-link" href="compras.html">Compras</a>
+                        <a class="nav-link" href="fidelizacion.html">Puntos</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container ">
+        <h2 class="text-center fw-semibold text-white">VIDEOJUEGOS</h2>
+        <form id="form-game" class="d-flex flex-column gap-1">
+            <input class=" form-control" id="titulo" name="titulo" placeholder="Nombre del videojuego">
+            <select class="form-control"name="genero" id="genero">
+                <option value="select">Seleccione...</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Ciencia Ficcion">Ciencia Ficción</option>
+                <option value="Fantasia">Fantasía</option>
+                <option value="Terror">Terror</option>
+            </select>
+            <input class=" form-control"id="valor" name="valor" type="text" placeholder="Valor">
+            <input class=" form-control"id="puntos" name="puntos" type="text" placeholder="Puntos por compra">
+            
+        <div class="row">
+            <div class="col">
+                <button id="addGame" type="button" class=" btn-light  m-3 ">Agregar</button>
+            </div>
+        </div>
+    </section>
+    <table class=" container bg-light table text-center">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titulo</th>
+                <th>Genero</th>
+                <th>Valor</th>
+                <th>Puntos</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tabla-juegos" class="text-center">
+        </tbody>
+    </table>
+    <!-- Scripts -->
+    <script src="Js/modVideoj.js"></script>
+    <!-- Bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+</body>
+</html>
