@@ -41,6 +41,7 @@ function agregar() {
         'correo': correo,
         'fecha': fecha,
         'nacionalidad': nacionalidad,
+        'puntos':0;
     }
 
     //Se agrega a la lista
